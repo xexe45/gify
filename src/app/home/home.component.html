@@ -1,0 +1,10 @@
+<div class="w-full flex flex-row items-center justify-start flex-wrap gap-4 py-5" *ngIf="tagsHistory.length > 0">
+  <app-tag *ngFor="let item of tagsHistory" [tag]="item" (tagEmmit)="searchTag($event)" ></app-tag>
+</div>
+<div class="flex flex-col md:flex-row flex-wrap gap-5 mt-5" *ngIf="tagList.length > 0; else noImage">
+  <app-card *ngFor="let item of tagList; let i = index" [gif]="item"></app-card>
+</div>
+
+<ng-template #noImage>
+ <app-item-not-found></app-item-not-found>
+</ng-template>

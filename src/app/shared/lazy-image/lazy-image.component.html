@@ -1,0 +1,2 @@
+<img [ngStyle]="{display: hasLoaded ? '' : 'none'}" [src]="url" [alt]="title" class="w-full object-cover h-full object-center" (load)="onLoad()">
+<img *ngIf="!hasLoaded" src="./assets/img/loader.svg" class="object-center" alt="">

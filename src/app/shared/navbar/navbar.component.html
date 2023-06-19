@@ -1,0 +1,15 @@
+<header class="mx-auto w-full p-4 flex flex-row gap-4 items-center justify-start shadow-lg fixed top-0 bg-white dark:bg-gray-800">
+  <a href="" class="basis-1/4">
+    <!-- Logo -->
+      <h1 class="text-2xl font-bold font-serif">Gify</h1>
+  </a>
+  <a href="" class="basis-1/4">
+    <!-- Logo -->
+      <span class="text-sm font-semibold text-gray-500">Explore</span>
+  </a>
+  <div class="basis-3/6 w-full relative">
+    <img src="./assets/img/buscar.png" class="absolute top-3 right-2" alt="">
+    <input type="text" placeholder="Search..." #search (keyup.enter)="searchTag()" class="w-full block rounded-full bg-gray-100 border-none shadow-sm
+    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 dark:text-black">
+  </div>
+</header>
